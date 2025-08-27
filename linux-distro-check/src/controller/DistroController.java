@@ -39,7 +39,7 @@ public class DistroController {
 					
 					if(linha.contains("VERSION") && linha.contains("LTS")) {
 						String[] vetVersion = linha.split("=");
-						System.out.println(vetVersion[1]);
+						System.out.println("Versão: " + vetVersion[1]);
 					}
 					
 					linha = buffer.readLine();
